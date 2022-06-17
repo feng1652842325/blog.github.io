@@ -5,7 +5,7 @@ module.exports = {
   themeConfig: {
     lastUpdated: '上一次更新',
     nav: [
-      { text: '首页', link: '/' },
+      { text: '首页', link: '/  ' },
       {
         text: 'Sutera的个人博客',
         items: [{ text: 'Github', link: 'https://github.com/feng1652842325/person-blog-shf' }]
