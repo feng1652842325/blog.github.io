@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "prettier": "^2.7.1"
+  }
+}
