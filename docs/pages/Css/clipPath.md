@@ -40,7 +40,7 @@ clip-path: clip-source|basic-shape|margin-box|border-box|padding-box|content-box
 ![clipShape](../../images/clipShape.png)
 
 ``` css
-    numberList_item {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 45% ,85% 50% ,100% 55% ,100% 100% ,0% 100% ,0% 55% ,15% 50% ,0% 45%);
-    }
+numberList_item {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 45% ,85% 50% ,100% 55% ,100% 100% ,0% 100% ,0% 55% ,15% 50% ,0% 45%);
+}
 ```

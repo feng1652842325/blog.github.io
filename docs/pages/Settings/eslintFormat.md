@@ -41,7 +41,7 @@ npm install prettier -D
 格式化的配置项也可以在这里加入，但是在写其他项目的时候同样会格式化，所以我们将配置写到项目的.prettierrc目录下，这样在拉取项目代码的时候可以保证配置一致
 Prettier配置
 
-``` js  
+``` json
 { 
   // 最大长度80个字
   printWidth: 80,

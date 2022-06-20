@@ -21,7 +21,8 @@ module.exports = {
         collapsable: false, // 不折叠
         children: [
           {
-            title: 'JavaScript'
+            title: 'JavaScript',
+            children: [{ title: 'throttle', path: '/pages/JavaScript/throttle' }]
           },
           {
             title: 'Css',
