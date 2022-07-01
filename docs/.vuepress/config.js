@@ -37,6 +37,10 @@ module.exports = {
         title: 'Vue'
       },
       {
+        title: '小程序',
+        children: [{ title: 'ios和安卓兼容问题', path: '/pages/Miniprogram/AndroidIosDiff' }]
+      },
+      {
         title: '项目',
         children: [{ title: '代码格式化及校验', path: '/pages/Settings/eslintFormat' }]
       }
