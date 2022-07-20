@@ -1,3 +1,12 @@
-# 博客介绍
+---
+home: true
+layout: Blog
+icon: home
+title: 主页
+heroImage: /avatar.jpeg
+heroText: 𝓢𝓾𝓽𝓮𝓪𝓻
+heroFullScreen: true
+tagline: Talk is cheape Show me the code
 
-> 主要记录和总结前端工作中常用的知识及生活。
+footer: 不积跬步 无以至千里
+---

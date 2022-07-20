@@ -1,10 +1,17 @@
 {
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs"
   },
   "devDependencies": {
     "eslint": "^8.17.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "@vuepress/client": "^2.0.0-beta.49",
+    "vue": "^3.2.36",
+    "vuepress": "^2.0.0-beta.49",
+    "vuepress-theme-hope": "^2.0.0-beta.87"
   }
 }
