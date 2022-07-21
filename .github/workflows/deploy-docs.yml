@@ -1,41 +1,19 @@
-name: 部署文档
-
-on:
-  push:
-    branches:
-      # 确保这是你正在使用的分支名称
-      - main
-
+name: Build and Deploy
+on: [push] // 推送代码触发脚本
 jobs:
-  deploy-gh-pages:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
+    - name: Checkout
+      uses: actions/checkout@master
 
-      - name: 设置 Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: npm
+    - name: Sutera blog
+      uses: feng1652842325/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{ secrets._TOKEN }} // github Token
+        TARGET_REPO: feng1652842325/feng1652842325.github.io  // 仓库
 
-      - name: 安装依赖
-        run: npm install
-
-      - name: 构建文档
-        env:
-          NODE_OPTIONS: --max_old_space_size=4096
-        run: |-
-          npm run docs:build
-          > docs/.vuepress/dist/.nojekyll
-
-      - name: 部署文档
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          # 这是文档部署到的分支名称
-          branch: master
-          folder: docs/.vuepress/dist
+        TARGET_BRANCH: gh-pages    // build 之后推到的分支名
+        BUILD_SCRIPT: npm && npm build
+        BUILD_DIR: docs/.vuepress/dist/     //build 之后的目录
+        CNAME: www.sutera.cn
