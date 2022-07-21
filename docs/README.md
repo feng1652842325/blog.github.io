@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: 主页
-heroImage: /avatar.jpeg
+heroImage: /avatar.png
 heroText: 𝓢𝓾𝓽𝓮𝓪𝓻
 heroFullScreen: true
 tagline: Talk is cheape Show me the code

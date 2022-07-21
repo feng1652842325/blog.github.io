@@ -29,7 +29,7 @@ export default hopeTheme({
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
 
   blog: {
-    avatar: 'avatar.jpeg',
+    avatar: 'avatar.png',
     roundAvatar: true,
     description: '前端开发者',
     medias: {
