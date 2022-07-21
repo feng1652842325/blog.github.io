@@ -13,6 +13,11 @@ export default sidebar([
         children: ['throttle']
       },
       {
+        text: 'Css',
+        prefix: 'Css',
+        children: ['clipPath']
+      },
+      {
         text: '项目配置',
         prefix: 'Settings',
         children: ['eslintFormat']

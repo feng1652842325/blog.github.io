@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: '/logo.svg',
 
-  repo: 'vuepress-theme-hope/vuepress-theme-hope',
+  repo: 'feng1652842325/feng1652842325.github.io',
 
   docsDir: 'demo/src',
 
