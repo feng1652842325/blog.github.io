@@ -12,8 +12,6 @@ export default hopeTheme({
 
   iconAssets: 'iconfont',
 
-  logo: '/logo.svg',
-
   repo: 'feng1652842325/feng1652842325.github.io',
 
   docsDir: 'demo/src',
@@ -31,8 +29,9 @@ export default hopeTheme({
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
 
   blog: {
-    description: '一个前端开发者',
-    intro: '/intro.html',
+    avatar: 'avatar.jpeg',
+    roundAvatar: true,
+    description: '前端开发者',
     medias: {
       // Baidu: 'https://example.com'
       // Bitbucket: "https://example.com",
