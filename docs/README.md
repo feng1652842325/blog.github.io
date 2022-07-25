@@ -6,7 +6,7 @@ title: 主页
 heroImage: /avatar.png
 heroText: 𝓢𝓾𝓽𝓮𝓪𝓻
 heroFullScreen: true
-tagline: Talk is cheape Show me the code
+tagline: The more you know, the less you know
 
-footer: 不积跬步 无以至千里
+footer: Talk is cheape Show me the code
 ---
