@@ -26,3 +26,14 @@ const formatDate = (date) => {
   return new Date(date.replaceAll("-", "/")).getTime();
 };
 ```
+
+### webview缓存问题
+
+在微信小程序中使用webview嵌套h5页面时 在某些安卓手机中会有缓存问题 导致页面无法及时更新 因此需要在跳转webview地址中携带版本号
+
+``` js
+let config;
+config = envVersion === "trial" ? trial : envVersion === "develop" ? develop : release;
+// 定义的全局变量
+config.version = "20220726"; // webview页面发版之后升级一次版本号
+```
