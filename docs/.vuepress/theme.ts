@@ -27,7 +27,7 @@ export default hopeTheme({
   displayFooter: true,
 
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag'],
-
+  editLink: false,
   blog: {
     avatar: 'avatar.png',
     roundAvatar: true,
