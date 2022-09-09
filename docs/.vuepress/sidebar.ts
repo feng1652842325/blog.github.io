@@ -26,6 +26,11 @@ export default sidebar([
         text: '小程序',
         prefix: 'Miniprogram',
         children: ['AndroidIosDiff']
+      },
+      {
+        text: 'Vue',
+        prefix: 'Vue',
+        children: ['licensePlate']
       }
     ]
   }
