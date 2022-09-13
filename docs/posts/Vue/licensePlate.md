@@ -1,6 +1,6 @@
 ---
 # 这是文章的标题
-title: 组件-车牌号录入
+title: 车牌号录入
 # 这是页面的图标
 icon: page
 # 这是侧边栏的顺序
@@ -14,9 +14,9 @@ category:
 tag:
   - 组件
 ---
->因业务需求而封装的车牌号录入组件 代码如下
+基于vant组件封装的移动端车牌号录入组件
 
-``` html
+``` vue
 <template>
   <div class="container">
     <div class="phone-frame">
@@ -38,9 +38,7 @@ tag:
     </van-popup>
   </div>
 </template>
-```
 
-``` js
 <script>
 export default {
   data() {
@@ -109,9 +107,7 @@ export default {
   }
 };
 </script>
-```
 
-``` css
 <style scoped lang="less">
 .container {
   .phone-frame {
