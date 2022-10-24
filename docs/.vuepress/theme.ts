@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: 'https://vuepress-theme-hope-v2-demo.mrhope.site',
 
   author: {
-    name: 'Sutera',
+    name: 'shf',
     url: 'https://mrhope.site'
   },
 
@@ -16,22 +16,19 @@ export default hopeTheme({
 
   docsDir: 'demo/src',
 
-  // navbar
   navbar: navbar,
 
-  // sidebar
   sidebar: sidebar,
 
   // footer: '默认页脚',
 
   displayFooter: true,
-
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag'],
   editLink: false,
   blog: {
     avatar: 'avatar.png',
     roundAvatar: true,
-    description: '前端开发者',
+    description: '前端开发',
     medias: {
       // Baidu: 'https://example.com'
       // Bitbucket: "https://example.com",
