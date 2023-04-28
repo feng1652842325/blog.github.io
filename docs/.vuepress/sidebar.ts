@@ -15,7 +15,7 @@ export default sidebar([
       {
         text: 'Css',
         prefix: 'Css',
-        children: ['clipPath']
+        children: ['clipPath', 'upload']
       },
       {
         text: '项目配置',

@@ -6,8 +6,7 @@ export default hopeTheme({
   hostname: 'https://vuepress-theme-hope-v2-demo.mrhope.site',
 
   author: {
-    name: 'shf',
-    url: 'https://mrhope.site'
+    name: 'Destiny'
   },
 
   iconAssets: 'iconfont',
@@ -28,7 +27,7 @@ export default hopeTheme({
   blog: {
     avatar: 'avatar.png',
     roundAvatar: true,
-    description: '前端开发',
+    description: '与其感慨路难行，不如马上出发',
     medias: {
       // Baidu: 'https://example.com'
       // Bitbucket: "https://example.com",
@@ -69,9 +68,7 @@ export default hopeTheme({
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: true
-    },
+    blog: true,
 
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
@@ -100,7 +97,28 @@ export default hopeTheme({
     // },
 
     mdEnhance: {
-      enableAll: false,
+      align: true,
+      attrs: true,
+      chart: true,
+      codetabs: true,
+      container: true,
+      card: true,
+      demo: true,
+      echarts: true,
+      figure: true,
+      flowchart: true,
+      gfm: true,
+      imgLazyload: true,
+      imgSize: true,
+      include: true,
+      katex: true,
+      mark: true,
+      mermaid: true,
+      sub: true,
+      sup: true,
+      tabs: true,
+      vPre: true,
+      vuePlayground: true,
       presentation: {
         plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
       }
