@@ -69,9 +69,7 @@ export default hopeTheme({
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: true
-    },
+    blog: true,
 
     // 如果你不需要评论，可以直接删除 comment 配置，
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
@@ -100,7 +98,6 @@ export default hopeTheme({
     // },
 
     mdEnhance: {
-      enableAll: false,
       presentation: {
         plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
       }
