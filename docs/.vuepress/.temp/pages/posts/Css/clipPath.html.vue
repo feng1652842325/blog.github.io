@@ -1,5 +1,9 @@
 <template><div><p>很多时候因为项目需要我们需要画一些不规则的图形，这个时候就可以用到css的clip-path 比如:</p>
+<<<<<<< HEAD
 <p><img src="@source/images/cardShape.png" alt="cardShape"></p>
+=======
+<figure><img src="@source/images/cardShape.png" alt="cardShape" tabindex="0" loading="lazy"><figcaption>cardShape</figcaption></figure>
+>>>>>>> 5225856fdd3644ae2eff2ed45b7410d3aee641cd
 <p>拿到这样UI图首先可以确定后段返回的肯定是字符串，前端处理成数组后循环出数字，再给每个数字做成卡片的样式</p>
 <p>简单的理清思路后就是敲代码了，前面都没什么难度，主要是卡片的样式是一个不规则的长方形，查询了多种方法之后选用了clip-path来做</p>
 <hr>
@@ -72,7 +76,11 @@
 </table>
 <p>裁剪的时候会从左上角以百分比坐标轴的方式顺时针方向裁剪<br>
 画一个图就很容易理解了</p>
+<<<<<<< HEAD
 <p><img src="@source/images/clipShape.png" alt="clipShape"></p>
+=======
+<figure><img src="@source/images/clipShape.png" alt="clipShape" tabindex="0" loading="lazy"><figcaption>clipShape</figcaption></figure>
+>>>>>>> 5225856fdd3644ae2eff2ed45b7410d3aee641cd
 <div class="language-css line-numbers-mode" data-ext="css"><pre v-pre class="language-css"><code><span class="token selector">numberList_item</span> <span class="token punctuation">{</span>
     <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">polygon</span><span class="token punctuation">(</span>0% 0%<span class="token punctuation">,</span> 100% 0%<span class="token punctuation">,</span> 100% 45% <span class="token punctuation">,</span>85% 50% <span class="token punctuation">,</span>100% 55% <span class="token punctuation">,</span>100% 100% <span class="token punctuation">,</span>0% 100% <span class="token punctuation">,</span>0% 55% <span class="token punctuation">,</span>15% 50% <span class="token punctuation">,</span>0% 45%<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>

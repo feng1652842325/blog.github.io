@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"博客\",\"description\":\"个人博客--用于记录工作中遇到的问题和思考\",\"head\":[],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
@@ -12,3 +13,6 @@ if (import.meta.hot) {
     __VUE_HMR_RUNTIME__.updateSiteData(siteData)
   })
 }
+=======
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"Destiny's Blog\",\"description\":\"个人博客--用于记录工作中遇到的问题和思考\",\"head\":[],\"locales\":{}}")
+>>>>>>> 5225856fdd3644ae2eff2ed45b7410d3aee641cd

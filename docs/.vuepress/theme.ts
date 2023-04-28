@@ -6,8 +6,7 @@ export default hopeTheme({
   hostname: 'https://vuepress-theme-hope-v2-demo.mrhope.site',
 
   author: {
-    name: 'shf',
-    url: 'https://mrhope.site'
+    name: 'Destiny'
   },
 
   iconAssets: 'iconfont',
@@ -28,7 +27,7 @@ export default hopeTheme({
   blog: {
     avatar: 'avatar.png',
     roundAvatar: true,
-    description: '前端开发',
+    description: '与其感慨路难行，不如马上出发',
     medias: {
       // Baidu: 'https://example.com'
       // Bitbucket: "https://example.com",
@@ -98,6 +97,28 @@ export default hopeTheme({
     // },
 
     mdEnhance: {
+      align: true,
+      attrs: true,
+      chart: true,
+      codetabs: true,
+      container: true,
+      card: true,
+      demo: true,
+      echarts: true,
+      figure: true,
+      flowchart: true,
+      gfm: true,
+      imgLazyload: true,
+      imgSize: true,
+      include: true,
+      katex: true,
+      mark: true,
+      mermaid: true,
+      sub: true,
+      sup: true,
+      tabs: true,
+      vPre: true,
+      vuePlayground: true,
       presentation: {
         plugins: ['highlight', 'math', 'search', 'notes', 'zoom']
       }
