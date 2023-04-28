@@ -15,7 +15,7 @@ tag:
   - Css
 ---
 
-::: vue-demo demo 演示
+::: vue-demo demo 演 示
 
 ```vue
 <template>
