@@ -9,7 +9,7 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "Mr.Feng",
     url: "https://mister-hope.com",
   },
 
@@ -32,7 +32,7 @@ export default hopeTheme({
 
   // 文章
   lastUpdated: false,
-  editLink: false,
+  editLink: true,
 
   blog: {
     description: "一个前端开发者",

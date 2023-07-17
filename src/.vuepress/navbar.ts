@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/前端/",
-  "LeetCode",
+  // "LeetCode",
   // {
   //   text: "博客",
   //   prefix: "/posts/",
