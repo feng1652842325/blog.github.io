@@ -10,14 +10,14 @@ export default hopeTheme({
 
   author: {
     name: "Mr.Feng",
-    url: "https://mister-hope.com",
+    // url: "https://mister-hope.com",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "/logo.svg",
+  // logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
 
@@ -26,7 +26,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  // footer: "默认页脚",
 
   displayFooter: true,
 
@@ -36,7 +36,7 @@ export default hopeTheme({
 
   blog: {
     description: "一个前端开发者",
-    intro: "/intro.html",
+    // intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
       // BiliBili: "https://example.com",
@@ -58,7 +58,7 @@ export default hopeTheme({
       // Linkedin: "https://example.com",
       // Pinterest: "https://example.com",
       // Pocket: "https://example.com",
-      // QQ: "https://example.com",
+      QQ: "https://example.com",
       // Qzone: "https://example.com",
       // Reddit: "https://example.com",
       // Rss: "https://example.com",
@@ -68,7 +68,7 @@ export default hopeTheme({
       // Weibo: "https://example.com",
       // Whatsapp: "https://example.com",
       // Youtube: "https://example.com",
-      // Zhihu: "https://example.com",
+      Zhihu: "https://example.com",
       // MrHope: ["https://mister-hope.com", MR_HOPE_AVATAR],
     },
   },
@@ -134,7 +134,10 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-
+    // 组件插件
+    components: {
+      components: ["SiteInfo"],
+    },
     // uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",

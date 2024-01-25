@@ -1,10 +1,8 @@
 ---
-home: false
+home: true
 layout: BlogHome
 icon: home
-title: 博客主页
-heroImage: /logo.svg
-heroText: 你博客的名称
+title: 主页
 heroFullScreen: true
 # tagline: 你可以在这里放置你的口号与标语
 # projects:
@@ -38,5 +36,7 @@ heroFullScreen: true
 #     desc: 自定义详细介绍
 #     link: https://你的自定义链接
 
-footer: 自定义你的页脚文字
+footer: talk is cheap show me your code
 ---
+
+<!-- <AutoCatalog /> -->

@@ -1,6 +1,10 @@
 ---
 title: 常用js简写技巧
 pageInfo: false
+category:
+  - 前端
+tag:
+  - JavaScript
 ---
 
 分享记录一些实用的 js 简写技巧，可以让代码看起来更加简洁优雅

@@ -1,1 +1,24 @@
 // place your custom styles here
+
+.tools {
+  &.links {
+    .vp-site-info {
+      width: calc(33% - 24px);
+    }
+  }
+
+  // 鼠标放上后变大
+  .vp-site-info {
+    overflow: hidden;
+
+    .vp-site-info-preview {
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      .vp-site-info-preview {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
