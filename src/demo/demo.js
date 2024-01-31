@@ -1,50 +1,38 @@
-class PromiseA {
-  // 构造器
-  constructor(executor) {
-    // 初始化state为等待态
-    this.state = "pending";
-    // 成功的值
-    this.value = undefined;
-    // 失败的原因
-    this.reason = undefined;
-    // 成功
-    let resolve = (value) => {
-      console.log(222);
-      if (this.state === "pending") {
-        this.state = "fulfilled";
-        // 存储成功的值
-        this.value = value;
-      }
-    };
-    // 失败
-    let reject = (reason) => {
-      this.state = "rejected";
-      // 存储失败的原因
-      this.reason = reason;
-    };
-    // 立即执行
+console.log("1");
 
-    try {
-      executor(resolve, reject);
-    } catch (error) {
-      reject(error);
-    }
-  }
-
-  then(onFulfilled, onRejected) {
-    if (this.state === "fulfilled") {
-      onFulfilled(this.value);
-    }
-    if (this.state === "rejected") {
-      onRejected(this.reason);
-    }
-  }
-}
-
-new PromiseA((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Hello, Promise!");
-  }, 1000);
-}).then((result) => {
-  console.log(result); // 输出: 'Hello, Promise!'
+setTimeout(function () {
+  console.log("2");
+  process.nextTick(function () {
+    console.log("3");
+  });
+  new Promise(function (resolve) {
+    console.log("4");
+    resolve();
+  }).then(function () {
+    console.log("5");
+  });
 });
+process.nextTick(function () {
+  console.log("6");
+});
+new Promise(function (resolve) {
+  console.log("7");
+  resolve();
+}).then(function () {
+  console.log("8");
+});
+
+setTimeout(function () {
+  console.log("9");
+  process.nextTick(function () {
+    console.log("10");
+  });
+  new Promise(function (resolve) {
+    console.log("11");
+    resolve();
+  }).then(function () {
+    console.log("12");
+  });
+});
+
+// 1 7 6 8 2 4 3 5 9 11 10 12

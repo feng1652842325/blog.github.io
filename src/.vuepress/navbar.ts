@@ -26,10 +26,6 @@ export default navbar([
         text: "链接",
         link: "links",
       },
-      {
-        text: "Excel",
-        link: "excel",
-      },
     ],
   },
 ]);

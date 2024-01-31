@@ -1,5 +1,5 @@
 ---
-title: 常见问题汇总
+title: vuex的简单使用
 pageInfo: false
 category:
   - 前端
