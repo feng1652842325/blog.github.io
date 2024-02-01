@@ -3,17 +3,13 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   {
-    text: "前端",
-    icon: "code",
-    prefix: "/frontEnd/",
+    text: "笔记",
+    icon: "edit",
+    prefix: "/notes/",
     children: [
       {
-        text: "JavaScript",
-        link: "JavaScript",
-      },
-      {
-        text: "Css",
-        link: "Css",
+        text: "前端",
+        link: "frontEnd",
       },
     ],
   },
