@@ -1,6 +1,7 @@
 ---
 title: 常用js简写技巧
 pageInfo: false
+date: 2022-12-12
 category:
   - 前端
 tag:

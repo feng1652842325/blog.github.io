@@ -30,6 +30,8 @@ Promise 对象刚被创建时的初始状态，此时还没有返回结果
 
 Promise 是一个构造函数，它接收 resolve 和 reject 两个回调函数作为参数，resolve 会把 Promise 的状态从等待改变为成功（Pending => Fulfilled），并将异步操作的结果作为参数传递给 then 方法，reject 会把 Promise 的状态从等待改变为失败（Pending => Rejected），并将失败的原因作为参数传递给 catch 方法或 then 方法的第二个参数
 
+### .then 成功的回调
+
 ```js
 new Promise((resolve, reject) => {
   setTimeout(() => {
