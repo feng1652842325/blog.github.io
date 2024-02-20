@@ -1,10 +1,12 @@
 ---
-article: false,
 index: false
-icon: "tools"
 dir:
+  icon: "tools"
   text: 工具
   order: 10
+article: false
 ---
 
-<!-- <AutoCatalog /> -->
+# 工具
+
+<AutoCatalog />

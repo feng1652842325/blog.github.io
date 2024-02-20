@@ -30,16 +30,66 @@ Promise 对象刚被创建时的初始状态，此时还没有返回结果
 
 Promise 是一个构造函数，它接收 resolve 和 reject 两个回调函数作为参数，resolve 会把 Promise 的状态从等待改变为成功（Pending => Fulfilled），并将异步操作的结果作为参数传递给 then 方法，reject 会把 Promise 的状态从等待改变为失败（Pending => Rejected），并将失败的原因作为参数传递给 catch 方法或 then 方法的第二个参数
 
-### .then 成功的回调
+### .then .catch
+
+返回成功的回调和失败的回调
 
 ```js
 new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Hello, Promise!");
   }, 1000);
-}).then((result) => {
-  console.log(result); // 输出: 'Hello, Promise!'
+})
+  .then((result) => {
+    console.log(result); // 输出: 'Hello, Promise!'
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+```
+
+### .all
+
+Promise.all 可以将多个 Promise 实例包装成一个新的 Promise 实例。同时，成功和失败的返回值是不同的，成功的时候返回的是一个结果数组，而失败的时候则返回最先被 reject 失败状态的值。
+
+```js
+let Promise1 = new Promise(function(resolve, reject){})
+let Promise2 = new Promise(function(resolve, reject){})
+let Promise3 = new Promise(function(resolve, reject){})
+
+let p = Promise.all([Promise1, Promise2, Promise3])
+
+p.then(funciton(){
+  // 三个都成功则成功
+}, function(){
+  // 只要有失败，则失败
+})
+```
+
+### .race
+
+race 有赛跑的意思，Promise.race([p1, p2, p3])里面哪个结果获得的快，就返回那个结果，不管结果本身是成功状态还是失败状态。
+
+```js
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("success");
+  }, 1000);
 });
+
+let p2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject("failed");
+  }, 500);
+});
+
+Promise.race([p1, p2])
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error); // 打开的是 'failed'
+  });
 ```
 
 ## Promise 简易实现

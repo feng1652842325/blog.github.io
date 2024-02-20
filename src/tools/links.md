@@ -4,7 +4,7 @@ icon: link
 title: 链接
 heroImage: /assets/images/preview/tools.jpg
 heroText: 链接
-tagline: 工具链接
+tagline: 链接
 description: 链接
 
 containerClass: tools links
@@ -41,7 +41,7 @@ tools:
     preview: /assets/images/preview/woozooo.jpg
 ---
 
-## 工具
+## 地址
 
 <SiteInfo
   v-for="item in $frontmatter.tools"

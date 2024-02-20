@@ -22,6 +22,10 @@ export default navbar([
         text: "链接",
         link: "links",
       },
+      {
+        text: "软件",
+        link: "software",
+      },
     ],
   },
 ]);
